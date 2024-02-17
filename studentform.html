@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation(){
+            let na=document.getElementById("fname");
+            let pa=document.getElementById("pass");
+            if(na==null||na.value==""){
+                alert("not valid")
+                return false;
+            }
+            else if(pa.value.length<8){
+                alert("not valid")
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Student registration form</h1>
+    <form onsubmit="return validation()" action="index.html">
+        <fieldset>
+            <legend>Basic info</legend>
+            <label for="fname">Name</lable><br>
+            <input type="text" placeholder="name" id="fname"><br>
+            <label for="pass">Password</lable><br>
+            <input type="password" id="pass"  placeholder="password"><br>
+            <label for="cour">course</label><br>
+            <select name="fbdf" id="cour">
+                <option>B.tech</option>
+                <option>Bsc</option>
+                <option>B.com</option>
+            </select><br>
+            <label for="cour">language</label><br>
+            <input type="radio" name="cour">c++
+            <input type="radio" name="cour">python
+            <input type="radio" name="cour">JavaScript
+            <br><br>
+            <center><button type="submit">submit</button></center>
+        </fieldset>
+    </form>
+   
+</body>
+</html>
