@@ -2,7 +2,7 @@
 // let b=Number(prompt("enter second num"));
 // alert(Number(a)+(b));
 console.dir(document.body);
-
+console.log("test");
 const subtract=()=>{
     let a=parseInt(prompt("enter first number"));
     let n=parseInt(prompt("enter second number"));
